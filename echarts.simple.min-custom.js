@@ -14785,7 +14785,6 @@
         var unitY = Math.sin(startAngle);
         ctx.moveTo(unitX * r0 + x, unitY * r0 + y);
         if (!roundCap || r0 === 0){
-            ctx._ctx ? (ctx._ctx.strokeStyle ? ctx._ctx.strokeStyle = "black" : undefined) : undefined
             ctx.lineTo(unitX * r + x, unitY * r + y);
             ctx.arc(x, y, r, startAngle, endAngle, !clockwise);
             ctx.lineTo(Math.cos(endAngle) * r0 + x, Math.sin(endAngle) * r0 + y);
@@ -14822,7 +14821,7 @@
         }
 
         ctx.closePath();
-        ctx._ctx ? ctx._ctx.stroke() : undefined;
+        // ctx._ctx ? ctx._ctx.stroke() : undefined;
       }
     });
 
