@@ -1,8 +1,10 @@
 # echarts-pie-roundcap
 =========
+
 Add roundCap option to echarts serie Pie setting
 ---------
-```#Example：
+```Javascript
+#Example：
 option = {
     tooltip: {
         trigger: 'item',
@@ -42,7 +44,7 @@ option = {
                 {value: 234, name: '联盟广告'},
                 {value: 135, name: '视频广告'},
                 {value: 500, name: '搜索引擎'}
-            ],
+            ],  
             roundCap:2// Optional Number：1 or 2，there are two modes of roundCap
         }
     ]
